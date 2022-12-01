@@ -6,7 +6,7 @@ export default async (req, res) => {
   const gptResponse = await openai.complete({
     engine: 'davinci',
     prompt: prompt,
-    maxTokens: 50,
+    maxTokens: 500,
     temperature: 0.7,
     topP: 1,
     presencePenalty: 0,
